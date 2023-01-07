@@ -55,13 +55,13 @@ The supported types are :
 ### Structure serialization
 
 ```java
-byte[] bytes = Structure.serialize(myStructure);
+byte[] bytes = StructureIO.serialize(myStructure);
 ```
 
 ### Structure deserialization
 
 ```java
-Structure structure = Structure.deserialize(bytes);
+Structure structure = StructureIO.deserialize(bytes);
 ```
 
 ## Item
