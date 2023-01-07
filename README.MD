@@ -29,7 +29,8 @@ struct student {
 The corresponding java code will be : 
 
 ```java
-Structure student = StructureBuilder.withId()
+Structure student = new StructureBuilder()
+	.putInt("id")
 	.putInt("age")
 	.putString("surname", 20)
 	.putString("firstname", 20)
