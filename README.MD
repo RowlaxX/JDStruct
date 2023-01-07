@@ -7,7 +7,7 @@ This library features are :
 - Memory efficient
 - Avoid the use of reflection
 
-This library has been made for DadTDB, so all Item must have a special key (id, timestamp or startDate&endDate)
+*This library has been made for DadTDB, so all Item must have a special key (id, timestamp or startDate&endDate)*
 
 ## Structure
 
