@@ -7,6 +7,8 @@ This library features are :
 - Memory efficient
 - Avoid the use of reflection
 
+This library has been made for DadTDB, so all Item must have a special key (id, timestamp or startDate&endDate)
+
 ## Structure
 
 A structure is a definition of multiple variable and has a fixed size
@@ -29,7 +31,7 @@ struct student {
 The corresponding java code will be : 
 
 ```java
-Structure student = new StructureBuilder()
+Structure student = StructureBuilder.withId()
 	.putInt("id")
 	.putInt("age")
 	.putString("surname", 20)
