@@ -7,8 +7,6 @@ This library features are :
 - Memory efficient
 - Avoid the use of reflection
 
-This library has been build with 
-
 ## Structure
 
 A structure is a definition of multiple variable and has a fixed size
@@ -27,6 +25,8 @@ struct student {
 	float average;
 }
 ```
+
+The corresponding java code will be : 
 
 ```java
 Structure student = StructureBuilder.withId()
@@ -71,15 +71,13 @@ Member cannot be created by the user
 An Item is a structure instance  
 Item can only be created using an ItemFactory
 
-### Creation
-
-#### Blank
+### Empty item creation
 
 ```java
 Item item = factory.newItem();
 ```
 
-#### Parsing
+### Parsing
 
 Parsing can be done using a Map<String, Object> instance
 
@@ -101,17 +99,13 @@ Item item = factory.parse(bytes);
 
 ## Item Factory
 
-ItemFactory can create item
-
-### Creation
-
-#### Default
+### Default
 
 ```java
 ItemFactory factory = ItemFactory.from(structure);
 ```
 
-#### Advanced
+### Advanced
 
 Advanced ItemFactory can be created using ItemFactoryBuilder class  
 This will add flexibility when parsing map objects
