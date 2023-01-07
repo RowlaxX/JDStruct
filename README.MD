@@ -49,22 +49,17 @@ The supported types are :
 - String
 - byte[]
 
-### Serialization
+### Structure serialization
 
 ```java
 byte[] bytes = Structure.serialize(myStructure);
 ```
 
-### Deserialization
+### Structure deserialization
 
 ```java
 Structure structure = Structure.deserialize(bytes);
 ```
-
-## Member
-
-A member correspond to a field in the structure  
-Member cannot be created by the user
 
 ## Item
 
@@ -77,21 +72,19 @@ Item can only be created using an ItemFactory
 Item item = factory.newItem();
 ```
 
-### Parsing
-
-Parsing can be done using a Map<String, Object> instance
+### Parsing from Map<String, Object>
 
 ```java
 Item item = factory.parse(map);
 ```
 
-### Serialization
+### Item serialization
 
 ```
 byte[] data = item.toBytes();
 ```
 
-### Deserialization
+### Item deserialization
 
 ```java
 Item item = factory.parse(bytes);
